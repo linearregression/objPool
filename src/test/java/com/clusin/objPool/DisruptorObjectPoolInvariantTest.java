@@ -6,10 +6,10 @@ import java.util.Set;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * Base class for {@link pool.DisruptorObjectPool} invariant test cases.
+ * Base class for {@link com.clusin.objPool.DisruptorObjectPool} invariant test cases.
  */
 public abstract class DisruptorObjectPoolInvariantTest {
-    public final static void runTest( final int numThreads, final int poolSize, final int runTimeInSeconds,
+    public static void runTest( final int numThreads, final int poolSize, final int runTimeInSeconds,
                                 final TestObjectPool pool )
     {
         final Consumer[] consumers = new Consumer[numThreads];
